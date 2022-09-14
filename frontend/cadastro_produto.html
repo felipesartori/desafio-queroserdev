@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base/base.css">
+    <link rel="stylesheet" href="./css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="./css/componentes/cartao.css">
+    <link rel="stylesheet" href="./css/componentes/inputs.css">
+    <link rel="stylesheet" href="./css/componentes/botao.css">
+    <link rel="stylesheet" href="./css/cadastro_produto.css">
+    <script type='text/javascript' src="./js/post.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.33/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="lista_produtos.html">Lista de Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container flex flex--centro flex--coluna">
+        <section class="cartao cadastro">
+            <h1 class="cartao_titulo">Cadastro de Produtos</h1>
+            <form class="flex flex--coluna">
+                <div class="input-container">
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+                    <label class="input-label" for="nome">Nome</label>
+                </div>
+                <div class="input-container cadastro__descricao-container">
+                    <input class="input" name="descricao" id="descricao" placeholder="Descrição" required>
+                    <label class="input-label" for="descricao">Descrição</label>
+                </div>
+                <div class="input-container cadastro__preco-container">
+                    <input name="preco" id="preco" class="input" type="number" placeholder="Preço" required>
+                    <label class="input-label" for="preco">Preço</label>
+                </div>
+                <div class="input-container cadastro__descricao-container">
+                    <input class="input" name="categoria" id="categoria" placeholder="Descrição" required>
+                    <label class="input-label" for="categoria">Categoria</label>
+                </div>
+                <button class="botao" onclick="registerProduct()">Cadastrar produto</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
