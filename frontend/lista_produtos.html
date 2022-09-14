@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Lista de Produtos</title>
+  <link rel="stylesheet" href="./css/base/base.css">
+  <link rel="stylesheet" href="./css/componentes/cabecalho.css">
+  <link rel="stylesheet" href="./css/componentes/cartao.css">
+  <link rel="stylesheet" href="./css/componentes/inputs.css">
+  <link rel="stylesheet" href="./css/componentes/botao.css">
+  <link rel="stylesheet" href="./css/cadastro_produto.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <script src="./js/busca.js"></script>
+</head>
+
+<body>
+  <header class="cabecalho container">
+    <nav>
+      <ul class="cabecalho__lista-navegacao">
+        <li class="cabecalho__link"><a href="cadastro_produto.html">Cadastro de Produtos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="input-container">
+    <div class="w3-container" style="position:relative">
+      <input type="text" class='w3-input w3-border' name='sendmsg' id="sendmsg" required placeholder="Pesquisar">
+      <button class="w3-btn w3-blue w3-border  w3-round-xlarge " onclick="buscar()" id="buttonPesquisa"
+        style="position:absolute;top:2px;right:16px;">Enviar</button>
+    </div>
+  </div>
+
+  <main class="container flex flex--centro flex--coluna">
+    <ul id="lista">
+      <script src="./js/get.js"></script>
+    </ul>
+  </main>
+
+</body>
+
+</html>
